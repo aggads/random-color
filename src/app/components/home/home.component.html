@@ -1,0 +1,11 @@
+<div class="container-fluid m-5">
+  <div class="row board-container border border-dark rounded">
+    <div class="board">
+      <!-- Change the css dynamically depending on the variable number-->
+      <div class="circle rounded-circle"
+      [ngClass]="{ 'first': position === 0, 'second': position === 1, 'third': position === 2, 'fourth': position === 3 }"
+      (click)="getColor(); changePosition()">
+      </div>
+    </div>
+  </div>
+</div>

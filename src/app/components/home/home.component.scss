@@ -1,0 +1,61 @@
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+.rounded {
+  border-radius: 2.25rem!important;
+}
+
+.container-fluid,.row{
+  /** If responsive needed use value in "vw" **/
+  // height: 21vw;
+  // width: 42vw;
+  height: 200px;
+  width: 400px;
+}
+
+.board-container{
+  box-sizing:border-box;
+  // padding:40px;
+
+}
+.board{
+  height:100%;
+}
+.circle{
+    background-color:teal;
+    /** If responsive needed use value in "vw" **/
+    // width: 5vw;
+    // height: 5vw;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+// Postion 0
+.first{
+  float: left;
+}
+
+// Postion 1
+.second{
+  float: right;
+}
+
+// Postition 2
+.third{
+  float: right;
+  margin-top: 145px;
+}
+
+// Position 3
+.fourth{
+  float: left;
+  margin-top: 145px;
+}
