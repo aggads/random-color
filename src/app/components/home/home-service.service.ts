@@ -12,9 +12,9 @@ export class HomeServiceService {
   private SERVER_URL = Constants.SERVER_URL;
 
 
-  constructor( private httpClient: HttpClient) { }
+  constructor( private http: HttpClient) { }
 
   public getNewColor() {
-    return this.httpClient.get<GenericResponse<any>>(`${this.SERVER_URL}`);
+    return this.http.get<GenericResponse<any>>(`${this.SERVER_URL}`);
   }
 }

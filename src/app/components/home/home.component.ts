@@ -21,12 +21,11 @@ export class HomeComponent implements OnInit {
   // Get the ex from the api to change the css dynamically
   getColor(){
     this.service.getNewColor().subscribe((data) =>{
-      if(data.success === true){
+      // if(data.success === true){
         console.log(data);
         console.log('ex Value : ', '#' + data.new_color);
-
         this.color = '#' + data.new_color;
-      }
+      // }
     })
   }
 

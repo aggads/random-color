@@ -4,6 +4,7 @@
       <!-- Change the css dynamically depending on the variable number-->
       <div class="circle rounded-circle"
       [ngClass]="{ 'first': position === 0, 'second': position === 1, 'third': position === 2, 'fourth': position === 3 }"
+      [ngStyle]="{'background-color':color}"
       (click)="getColor(); changePosition()">
       </div>
     </div>
