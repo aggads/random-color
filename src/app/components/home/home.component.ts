@@ -22,9 +22,9 @@ export class HomeComponent implements OnInit {
   getColor(){
     this.service.getNewColor().subscribe((data) =>{
       // if(data.success === true){
-        console.log(data);
-        console.log('ex Value : ', '#' + data.new_color);
-        this.color = '#' + data.new_color;
+        console.log(data[0]);
+        console.log('ex Value : ', '#' + data[0].hex);
+        this.color = '#' + data[0].hex;
       // }
     })
   }
